@@ -3,31 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My GitHub Page</title>
+  <title>Anukul Jena - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
-    .profile-container {
-      display: flex;
-      align-items: center;
-      gap: 10px; /* Space between photo and name */
-      padding: 20px;
-    }
-
     .profile-photo {
-      width: 70px; /* Adjust size as needed */
-      height: 70px;
-      border-radius: 50%; /* Makes the image circular */
-      object-fit: cover; /* Ensures the image fits nicely */
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
     }
-
-    .profile-name {
-      font-size: 1.2em; /* Adjust text size as needed */
+    .section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+    .project-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
   </style>
 </head>
-<body>
-  <div class="profile-container">
-    <img src="/assets/anukul_photo.png" alt="Profile Photo" class="profile-photo">
-    <span class="profile-name">Anukul Jena</span>
-  </div>
+<body class="bg-gray-100 font-sans">
+  <!-- Hero Section -->
+  <section class="bg-blue-600 text-white text-center py-12">
+    <div class="section">
+      <img src="/assets/anukul_photo.png" alt="Anukul Jena" class="profile-photo mx-auto mb-4">
+      <h1 class="text-4xl font-bold">Anukul Jena</h1>
+      <p class="text-xl mt-2">Web Developer | Passionate about Building Innovative Solutions</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section bg-white">
+    <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+    <p class="text-gray-700">
+      Hi, I'm Anukul Jena, a dedicated web developer with a passion for creating user-friendly and innovative web applications. 
+      I specialize in front-end and back-end development, with experience in HTML, CSS, JavaScript, and modern frameworks. 
+      My goal is to build impactful solutions that solve real-world problems.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section bg-gray-50">
+    <h2 class="text-2xl font-semibold mb-4">Skills</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-center">HTML</span>
+      <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-center">CSS</span>
+      <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-center">JavaScript</span>
+      <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-center">React</span>
+      <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-center">Node.js</span>
+      <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-center">Python</span>
+      <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-center">Git</span>
+      <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-center">SQL</span>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section bg-white">
+    <h2 class="text-2xl font-semibold mb-4">Projects</h2>
+    <div class="space-y-6">
+      <div class="project-card bg-gray-50 p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-medium">Project One</h3>
+        <p class="text-gray-700 mt-2">
+          A web application built with React and Node.js to manage tasks efficiently. Features include real-time updates and user authentication.
+        </p>
+        <a href="https://github.com/username/project-one" class="text-blue-600 hover:underline mt-2 inline-block">View on GitHub</a>
+      </div>
+      <div class="project-card bg-gray-50 p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-medium">Project Two</h3>
+        <p class="text-gray-700 mt-2">
+          A portfolio website (this site!) showcasing my skills and projects, built with HTML, CSS, and Tailwind CSS.
+        </p>
+        <a href="https://github.com/username/repository" class="text-blue-600 hover:underline mt-2 inline-block">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section bg-gray-50">
+    <h2 class="text-2xl font-semibold mb-4">Contact</h2>
+    <p class="text-gray-700">
+      I'm always open to new opportunities and collaborations. Reach out to me via:
+    </p>
+    <ul class="list-disc list-inside mt-2 text-gray-700">
+      <li>Email: <a href="mailto:your.email@example.com" class="text-blue-600 hover:underline">your.email@example.com</a></li>
+      <li>GitHub: <a href="https://github.com/username" class="text-blue-600 hover:underline">github.com/username</a></li>
+      <li>LinkedIn: <a href="https://linkedin.com/in/username" class="text-blue-600 hover:underline">linkedin.com/in/username</a></li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white text-center py-4">
+    <p>&copy; 2025 Anukul Jena. All rights reserved.</p>
+  </footer>
 </body>
 </html>
