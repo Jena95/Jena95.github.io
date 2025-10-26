@@ -46,34 +46,27 @@
     </p>
   </section>
 
-  <!-- Skills Section -->
-  <section class="section bg-gray-50">
-    <h2 class="text-2xl font-semibold mb-4">Skills</h2>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-center">HTML</span>
-      <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-center">CSS</span>
-      <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-center">JavaScript</span>
-      <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-center">React</span>
-      <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-center">Node.js</span>
-      <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-center">Python</span>
-      <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-center">Git</span>
-      <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-center">SQL</span>
-    </div>
-  </section>
-
   <!-- Projects Section -->
   <section class="section bg-white">
     <h2 class="text-2xl font-semibold mb-4">Projects</h2>
     <div class="space-y-6">
       <div class="project-card bg-gray-50 p-6 rounded-lg shadow-md">
-        <h3 class="text-xl font-medium">Project One</h3>
+        <h3 class="text-xl font-medium">Streaming Data Pipeline with Pub/Sub and BigQuery</h3>
         <p class="text-gray-700 mt-2">
-          A web application built with React and Node.js to manage tasks efficiently. Features include real-time updates and user authentication.
+          Designed and implemented a production-grade data pipeline that streams financial transactions from Google Pub/Sub into BigQuery.
+          Built a layered data architecture with <strong>raw</strong> and <strong>clean</strong> tables, using scheduled <strong>BigQuery Stored Procedures</strong>
+          for daily incremental loads, <strong>MERGE</strong> logic for deduplication, and backfill processes for historical data.
+          Ensured reliability by handling <strong>late-arriving events</strong> and optimizing for cost with partitioned and clustered tables.
         </p>
-        <a href="https://github.com/username/project-one" class="text-blue-600 hover:underline mt-2 inline-block">View on GitHub</a>
+        <ul class="list-disc list-inside text-gray-700 mt-3">
+          <li><strong>Tech Stack:</strong> Google Cloud Pub/Sub, BigQuery, Cloud Scheduler, SQL, Python</li>
+          <li><strong>Key Features:</strong> Incremental loads, deduplication, late data handling, and automated scheduling</li>
+        </ul>
+        <a href="https://github.com/username/pubsub-bigquery-pipeline" class="text-blue-600 hover:underline mt-3 inline-block">View on GitHub</a>
       </div>
+
       <div class="project-card bg-gray-50 p-6 rounded-lg shadow-md">
-        <h3 class="text-xl font-medium">Project Two</h3>
+        <h3 class="text-xl font-medium">Portfolio Website</h3>
         <p class="text-gray-700 mt-2">
           A portfolio website (this site!) showcasing my skills and projects, built with HTML, CSS, and Tailwind CSS.
         </p>
